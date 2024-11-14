@@ -1,13 +1,18 @@
 from setuptools import find_packages, setup
 
+VERSION = "0.0.1"
+DESCRIPTION = "A simple example private package"
+LONG_DESCRIPTION = "A simple example private package"
+
 setup(
     name="package_publishing",
-    version="0.1",
+    version=VERSION,
     packages=find_packages(),
-    install_requires=[],
+    install_requires=[], # add any additional packages that
+        # needs to be installed along with your package. Eg: 'caer'
     author="Karoki",
     author_email="karoki@kar.co",
-    description="A simple example private package",
+    description=DESCRIPTION,
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/Phystro/package_publishing",
